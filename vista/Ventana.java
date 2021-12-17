@@ -24,6 +24,7 @@ public class Ventana extends javax.swing.JFrame {
         jtxEdad.setEditable(false);
         jtxEspecialidad.setEditable(false);
         jtxMontura.setEditable(false);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
 
     public Modelo_vista getModelo() {

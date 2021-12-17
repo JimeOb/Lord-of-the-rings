@@ -14,11 +14,11 @@ import modelo.personajes_factories.PersonajeFactory;
  */
 public class PersonajesManager {
 
-    private List<Personaje> personajes;
+    private final List<Personaje> personajes;
     private PersonajeFactory personajeFactory;
 
     public PersonajesManager() {
-        personajes = new ArrayList<Personaje>();
+        personajes = new ArrayList();
     }
 
     public List<Personaje> getPersonajes() {

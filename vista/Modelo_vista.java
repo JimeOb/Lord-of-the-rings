@@ -1,8 +1,15 @@
 package vista;
 
+import java.awt.Image;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+import javax.imageio.ImageIO;
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import modelo.PersonajesManager;
 import modelo.TipoPersonaje;
@@ -12,7 +19,7 @@ import modelo.personajes.Personaje;
 public class Modelo_vista {
     
     private Ventana vista;
-    private PersonajesManager managerJuego;
+    private final PersonajesManager managerJuego;    
 
     public Ventana getVista() {
         if (vista == null)
@@ -28,7 +35,7 @@ public class Modelo_vista {
         getVista().setVisible(true);
         getVista().setSize(290, 460);
         getVista().getPnlGuerreros().setVisible(false);
-        getVista().getBoxGuerreros().setVisible(false);
+        getVista().getBoxGuerreros().setVisible(false);        
     }
     
     public void crear (){
@@ -44,21 +51,53 @@ public class Modelo_vista {
             getVista().getBoxGuerreros().setVisible(true);
             
             Integer cantidadPersonajes = Integer.parseInt(getVista().getJtxNumero().getText());
-            managerJuego.crearPersonajes(TipoPersonaje.Elfo, cantidadPersonajes);
-            actualizarListaPersonajes();
-            System.out.println("Tamo bien :v");
+            String tipo = (String) getVista().getBoxGuerreros1().getSelectedItem();                        
+            managerJuego.crearPersonajes(TipoPersonaje.valueOf(tipo), cantidadPersonajes);     
+            getVista().getBoxGuerreros().setSelectedIndex(0);
+            actualizarListaPersonajes();            
+    }
+    
+    private void cargarImagen(String ruta) {
+        try {            
+            
+            BufferedImage image = ImageIO.read(new File(ruta));
+            
+            getVista().getLbImagen().setIcon(new ImageIcon(image.getScaledInstance(getVista().getLbImagen().getWidth(), getVista().getLbImagen().getHeight(), Image.SCALE_SMOOTH)));
+            
+        } catch (IOException ex) {
+            
+            ex.printStackTrace();            
+        }
+        
     }
     
     private void actualizarListaPersonajes() {
         List<Personaje> personajesGenerados = managerJuego.getPersonajes();
+        
         getVista().getBoxGuerreros().setModel(
                 new DefaultComboBoxModel (
-                        personajesGenerados.stream()
-                                .map(personaje -> personaje.getRaza()).collect(Collectors.toList())
-                                .toArray()
-        ));
-        
-        //getVista().getBoxGuerreros().up
+                        IntStream
+                                .range(0, personajesGenerados.size())
+                                .mapToObj(index -> {
+                                    return "Guerrero #" + index;
+                                })
+                                .collect(Collectors.toList())
+                                .toArray()                        
+        ));        
     }
-    
+
+    void actualizarDatosPanel() {
+        List<Personaje> personajesGenerados = managerJuego.getPersonajes();
+        Personaje personajeSeleccionado =  personajesGenerados.get(getVista().getBoxGuerreros().getSelectedIndex());
+        
+        getVista().getJtxEdad().setText(personajeSeleccionado.getEdad().toString());
+        getVista().getJtxEspecialidad().setText(personajeSeleccionado.getEspecialidad());
+        getVista().getJtxAltura().setText(personajeSeleccionado.getAltura().toString());
+        getVista().getJtxArma().setText(personajeSeleccionado.getArma().toString()); 
+        getVista().getJtxArnadura().setText(personajeSeleccionado.getArmadura().toString()); 
+        getVista().getJtxMontura().setText(personajeSeleccionado.getMontura().toString());         
+        
+        cargarImagen("vista/img/"+personajeSeleccionado.getClass().getSimpleName() + ".jpg");
+        getVista().getLbImagen().repaint();
+    }    
 }

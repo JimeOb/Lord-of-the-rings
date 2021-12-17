@@ -42,6 +42,6 @@ public abstract class Arma implements Cloneable {
 
     @Override
     public String toString() {        
-        return String.format("info del arma: [Peso: %d, rareza: %s, ataque: %d]", peso, rareza, ataque);
+        return String.format("info del arma: [Peso: %f, rareza: %s, ataque: %f]", peso, rareza, ataque);
     }    
 }

@@ -3,7 +3,6 @@ package vista;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-
 public class Controlador implements ActionListener {
 
     private final Modelo_vista modelo;
@@ -18,6 +17,8 @@ public class Controlador implements ActionListener {
         if(e.getSource() == modelo.getVista().getBtnGenerar()){
             modelo.crear();
         }
-    }
-    
+        else if(e.getSource() == modelo.getVista().getBoxGuerreros()){
+            modelo.actualizarDatosPanel();
+        }
+    }   
 }

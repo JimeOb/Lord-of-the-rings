@@ -32,6 +32,6 @@ public abstract class Montura {
 
     @Override
     public String toString() {        
-        return String.format("info del arma: [Velocidad: %d, edad: %i, tamaño: %s]", velocidad, edad, size);
+        return String.format("info del arma: [Velocidad: %f, edad: %d, tamaño: %s]", velocidad, edad, size);
     }  
 }

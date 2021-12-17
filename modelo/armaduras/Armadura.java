@@ -45,7 +45,7 @@ public abstract class Armadura {
     
     @Override
     public String toString() {        
-        return String.format("info del arma: [Resistencia: %s, peso: %d, calidad: %s, defensa: %d, ]",resistencia , peso, calidad, defensa);
+        return String.format("info del arma: [Resistencia: %s, peso: %f, calidad: %s, defensa: %f, ]",resistencia , peso, calidad, defensa);
     }  
 
 }

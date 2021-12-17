@@ -1,10 +1,15 @@
 package vista;
 
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+import modelo.TipoPersonaje;
 
 
 public class Ventana extends javax.swing.JFrame {
@@ -25,6 +30,7 @@ public class Ventana extends javax.swing.JFrame {
         jtxEspecialidad.setEditable(false);
         jtxMontura.setEditable(false);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
+        inicializarBoxTiposGuerreros();
     }
 
     public Modelo_vista getModelo() {
@@ -39,7 +45,7 @@ public class Ventana extends javax.swing.JFrame {
     }
 
     public JComboBox<String> getBoxGuerreros() {
-        return boxGuerreros;
+        return boxElegir;
     }
 
     public JButton getBtnGenerar() {
@@ -55,7 +61,7 @@ public class Ventana extends javax.swing.JFrame {
     }
 
     public void setBoxGuerreros(JComboBox<String> boxGuerreros) {
-        this.boxGuerreros = boxGuerreros;
+        this.boxElegir = boxGuerreros;
     }
 
     public void setPnlGuerreros(JPanel pnlGuerreros) {
@@ -126,8 +132,9 @@ public class Ventana extends javax.swing.JFrame {
         this.lbRaza = lbRaza;
     }
 
-    
-    
+    public JComboBox<String> getBoxGuerreros1() {
+        return boxGuerreros1;
+    }
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -137,7 +144,7 @@ public class Ventana extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jtxNumero = new javax.swing.JTextField();
         btnGenerar = new javax.swing.JButton();
-        boxGuerreros = new javax.swing.JComboBox<>();
+        boxElegir = new javax.swing.JComboBox<>();
         pnlGuerreros = new javax.swing.JPanel();
         lbRaza = new javax.swing.JLabel();
         lbImagen = new javax.swing.JLabel();
@@ -146,13 +153,15 @@ public class Ventana extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
         jtxArma = new javax.swing.JTextField();
         jtxEdad = new javax.swing.JTextField();
         jtxAltura = new javax.swing.JTextField();
         jtxEspecialidad = new javax.swing.JTextField();
         jtxMontura = new javax.swing.JTextField();
         jtxArnadura = new javax.swing.JTextField();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        boxGuerreros1 = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -165,19 +174,18 @@ public class Ventana extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Tempus Sans ITC", 0, 18)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Numero de guerreros : ");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, -1, 37));
-        getContentPane().add(jtxNumero, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 220, 41, -1));
+        jLabel3.setText("tipo de guerreros : ");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, -1, 37));
+        getContentPane().add(jtxNumero, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 180, 41, -1));
 
         btnGenerar.setBackground(new java.awt.Color(153, 255, 153));
         btnGenerar.setFont(new java.awt.Font("Tempus Sans ITC", 1, 24)); // NOI18N
         btnGenerar.setText("GENERAR");
         getContentPane().add(btnGenerar, new org.netbeans.lib.awtextra.AbsoluteConstraints(63, 366, 159, 48));
 
-        boxGuerreros.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        getContentPane().add(boxGuerreros, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 20, 500, -1));
+        boxElegir.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        getContentPane().add(boxElegir, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 20, 680, -1));
 
-        pnlGuerreros.setBackground(new java.awt.Color(255, 102, 153));
         pnlGuerreros.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbRaza.setFont(new java.awt.Font("Tempus Sans ITC", 1, 24)); // NOI18N
@@ -204,11 +212,8 @@ public class Ventana extends javax.swing.JFrame {
         jLabel10.setText("Armadura :");
         pnlGuerreros.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 290, -1, -1));
 
-        jLabel11.setText("Arma :");
-        pnlGuerreros.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 340, -1, -1));
-
         jtxArma.setText("jTextField1");
-        pnlGuerreros.add(jtxArma, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 330, 230, 30));
+        pnlGuerreros.add(jtxArma, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 330, 420, 30));
 
         jtxEdad.setText("jTextField1");
         pnlGuerreros.add(jtxEdad, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 80, 230, 30));
@@ -220,24 +225,46 @@ public class Ventana extends javax.swing.JFrame {
         pnlGuerreros.add(jtxEspecialidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 180, 230, 30));
 
         jtxMontura.setText("jTextField1");
-        pnlGuerreros.add(jtxMontura, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 230, 230, 30));
+        pnlGuerreros.add(jtxMontura, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 230, 420, 30));
 
         jtxArnadura.setText("jTextField1");
-        pnlGuerreros.add(jtxArnadura, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 280, 230, 30));
+        pnlGuerreros.add(jtxArnadura, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 280, 420, 30));
+
+        jLabel14.setText("Arma :");
+        pnlGuerreros.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 340, -1, -1));
 
         getContentPane().add(pnlGuerreros, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 60, 750, 370));
+
+        jLabel4.setFont(new java.awt.Font("Tempus Sans ITC", 0, 18)); // NOI18N
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("Numero de guerreros : ");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, -1, 37));
+
+        boxGuerreros1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        boxGuerreros1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                boxGuerreros1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(boxGuerreros1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 240, 110, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void boxGuerreros1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boxGuerreros1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_boxGuerreros1ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> boxGuerreros;
+    private javax.swing.JComboBox<String> boxElegir;
+    private javax.swing.JComboBox<String> boxGuerreros1;
     private javax.swing.JButton btnGenerar;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
@@ -257,8 +284,15 @@ public class Ventana extends javax.swing.JFrame {
     private void capturarEventos (){
         btnGenerar.addActionListener(getControl());
         jtxNumero.addActionListener(getControl());
-
+        boxElegir.addActionListener(getControl());
+    }
+    
+    public void inicializarBoxTiposGuerreros() {
+        List<String> tiposGuerreros = Stream.of(TipoPersonaje.values())
+                .map(TipoPersonaje::name)
+                .collect(Collectors.toList());
         
+        boxGuerreros1.setModel(new DefaultComboBoxModel(tiposGuerreros.toArray()));
     }
 }
 

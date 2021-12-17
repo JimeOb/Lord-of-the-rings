@@ -29,4 +29,9 @@ public abstract class Montura {
     public void setSize(String size) {
         this.size = size;
     }
+
+    @Override
+    public String toString() {        
+        return String.format("info del arma: [Velocidad: %d, edad: %i, tamaño: %s]", velocidad, edad, size);
+    }  
 }

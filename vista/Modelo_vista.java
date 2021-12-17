@@ -30,10 +30,13 @@ public class Modelo_vista {
         if(Integer.parseInt(vista.getJtxNumero().getText()) > 50 ){
             JOptionPane.showMessageDialog(null,"Solo se puede crear hasta 50 guerreros","Error", JOptionPane.ERROR_MESSAGE);
         }
-        else if (Integer.parseInt(vista.getJtxNumero().getText()) < 0 ){
-            JOptionPane.showMessageDialog(null,"No se admiten numeros negativos","Error", JOptionPane.ERROR_MESSAGE);
+        else if (Integer.parseInt(vista.getJtxNumero().getText()) < 0){
+            JOptionPane.showMessageDialog(null,"Verifique los datos insertados","Error", JOptionPane.ERROR_MESSAGE);
         }
         else
+            getVista().setSize(1097, 497);
+            getVista().getPnlGuerreros().setVisible(true);
+            getVista().getBoxGuerreros().setVisible(true);
             System.out.println("Tamo bien :v");
     }
     

@@ -18,6 +18,12 @@ public class Ventana extends javax.swing.JFrame {
         capturarEventos();
         setLocationRelativeTo(null);
         setTitle("Lord of the Rings");
+        jtxAltura.setEditable(false);
+        jtxArma.setEditable(false);
+        jtxArnadura.setEditable(false);
+        jtxEdad.setEditable(false);
+        jtxEspecialidad.setEditable(false);
+        jtxMontura.setEditable(false);
     }
 
     public Modelo_vista getModelo() {

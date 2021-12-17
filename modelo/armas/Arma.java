@@ -1,6 +1,6 @@
 package modelo.armas;
 
-public abstract class Arma {
+public abstract class Arma implements Cloneable {
     
     protected Double peso;
     protected Double ataque;
@@ -33,4 +33,10 @@ public abstract class Arma {
     public void setRareza(String rareza) {
         this.rareza = rareza;
     }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        
+        return super.clone();
+    }    
 }

@@ -2,7 +2,7 @@ package modelo.equipamientos_factory;
 
 import modelo.armaduras.Armadura;
 import modelo.armas.Arma;
-import modelo.montura.Montura;
+import modelo.monturas.Montura;
 
 public interface PersonajeEquipamientoFactory {
     

@@ -1,4 +1,4 @@
-package modelo.montura;
+package modelo.monturas;
 
 public abstract class Montura {
     

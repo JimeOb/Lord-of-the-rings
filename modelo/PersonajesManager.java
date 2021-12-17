@@ -6,7 +6,9 @@ import java.util.List;
 import modelo.personajes.Personaje;
 import modelo.personajes_factories.ElfoFactory;
 import modelo.personajes_factories.EnanoFactory;
+import modelo.personajes_factories.HobbitFactory;
 import modelo.personajes_factories.HombreFactory;
+import modelo.personajes_factories.OrcoFactory;
 import modelo.personajes_factories.PersonajeFactory;
 
 /**
@@ -36,6 +38,12 @@ public class PersonajesManager {
                 break;
             case Elfo:
                 personajeFactory = new ElfoFactory();
+                break;
+            case Hobbit:
+                personajeFactory = new HobbitFactory();
+                break;
+            case Orco:
+                personajeFactory = new OrcoFactory();
                 break;
         }        
 

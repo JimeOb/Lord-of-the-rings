@@ -1,5 +1,5 @@
 package Modelo.PersonajeBuilders;
 
-public class ElfoFactory {
+public class ElfoFactory extends PersonajeFactory{
     
 }

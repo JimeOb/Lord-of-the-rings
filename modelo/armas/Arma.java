@@ -38,5 +38,10 @@ public abstract class Arma implements Cloneable {
     protected Object clone() throws CloneNotSupportedException {
         
         return super.clone();
+    }
+
+    @Override
+    public String toString() {        
+        return String.format("info del arma: [Peso: %d, rareza: %s, ataque: %d]", peso, rareza, ataque);
     }    
 }

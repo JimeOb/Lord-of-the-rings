@@ -4,8 +4,8 @@ import modelo.armaduras.Armadura;
 import modelo.armaduras.ArmaduraPesada;
 import modelo.armas.Arma;
 import modelo.armas.Hacha;
-import modelo.montura.Caballo;
-import modelo.montura.Montura;
+import modelo.monturas.Caballo;
+import modelo.monturas.Montura;
 
 public class EnanoEquipamientoFactory implements PersonajeEquipamientoFactory {
 

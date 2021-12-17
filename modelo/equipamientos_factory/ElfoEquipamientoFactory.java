@@ -4,8 +4,8 @@ import modelo.armaduras.Armadura;
 import modelo.armaduras.ArmaduraLigera;
 import modelo.armas.Arco;
 import modelo.armas.Arma;
-import modelo.montura.Caballo;
-import modelo.montura.Montura;
+import modelo.monturas.Caballo;
+import modelo.monturas.Montura;
 
 public class ElfoEquipamientoFactory implements PersonajeEquipamientoFactory {
 

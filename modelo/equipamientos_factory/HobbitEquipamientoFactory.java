@@ -4,8 +4,8 @@ import modelo.armaduras.Armadura;
 import modelo.armaduras.ArmaduraLigera;
 import modelo.armas.Arma;
 import modelo.armas.Espada;
-import modelo.montura.Caballo;
-import modelo.montura.Montura;
+import modelo.monturas.Caballo;
+import modelo.monturas.Montura;
 
 
 public class HobbitEquipamientoFactory implements PersonajeEquipamientoFactory {

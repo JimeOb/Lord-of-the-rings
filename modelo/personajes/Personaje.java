@@ -3,7 +3,7 @@ package modelo.personajes;
 import modelo.armaduras.Armadura;
 import modelo.armas.Arma;
 import modelo.equipamientos_factory.PersonajeEquipamientoFactory;
-import modelo.montura.Montura;
+import modelo.monturas.Montura;
 
 public abstract class Personaje implements Cloneable {
     
@@ -56,15 +56,12 @@ public abstract class Personaje implements Cloneable {
         this.altura = altura;
     }
     
-    
-
-
     @Override
     protected Personaje clone() {
         Personaje clonedPersonaje = null;
         try {
             clonedPersonaje = (Personaje) super.clone();
-            //TODO cambiar propiedades   
+            
             
             return clonedPersonaje;
         } catch (CloneNotSupportedException ex) {

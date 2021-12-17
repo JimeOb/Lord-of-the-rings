@@ -18,5 +18,5 @@
 </div>
 <div>
         <h3>Diagrama UML de clases: </h3>
-        <img src="./assets/imagen.png">
+        <img src="Diagrama.png">
 </div>

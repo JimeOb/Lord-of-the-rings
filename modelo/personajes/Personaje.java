@@ -2,6 +2,7 @@ package modelo.personajes;
 
 import modelo.armaduras.Armadura;
 import modelo.armas.Arma;
+import modelo.equipamientos_factory.PersonajeEquipamientoFactory;
 import modelo.montura.Montura;
 
 public abstract class Personaje implements Cloneable {
@@ -14,10 +15,13 @@ public abstract class Personaje implements Cloneable {
     protected Integer edad;
     protected Double altura;
     
-    public Personaje(Arma arma, Armadura armadura, Montura montura){
-        this.arma = arma;
-        this.armadura = armadura;
-        this.montura = montura;
+    protected PersonajeEquipamientoFactory equipamientoFactory;
+
+    public Personaje(PersonajeEquipamientoFactory equipamientoFactory) {
+        this.equipamientoFactory = equipamientoFactory;
+        armadura = equipamientoFactory.createArmadura();
+        arma = equipamientoFactory.createArma();
+        montura = equipamientoFactory.createMontura();
     }
 
     public String getRaza() {

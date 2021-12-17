@@ -2,14 +2,12 @@ package modelo.personajes;
 
 import java.util.Random;
 
-import modelo.armaduras.Armadura;
-import modelo.armas.Arma;
-import modelo.montura.Montura;
+import modelo.equipamientos_factory.ElfoEquipamientoFactory;
 
 public class Elfo extends Personaje {
 
-    public Elfo (Arma arma, Armadura armadura, Montura montura){
-        super(arma, armadura, montura);
+    public Elfo () {
+        super(new ElfoEquipamientoFactory());
         Random rm = new Random();
         this.altura = 2.0 + rm.nextDouble();
         this.edad = 200 + rm.nextInt(400);

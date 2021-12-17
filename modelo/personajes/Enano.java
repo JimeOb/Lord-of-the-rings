@@ -2,14 +2,12 @@ package modelo.personajes;
 
 import java.util.Random;
 
-import modelo.armaduras.Armadura;
-import modelo.armas.Arma;
-import modelo.montura.Montura;
+import modelo.equipamientos_factory.EnanoEquipamientoFactory;
 
 public class Enano extends Personaje {
     
-    public Enano (Arma arma, Armadura armadura, Montura montura){
-        super(arma, armadura, montura);
+    public Enano (){
+        super(new EnanoEquipamientoFactory());
         Random rm = new Random();
         this.altura = 0.5 + rm.nextDouble();
         this.edad = 100 + rm.nextInt(300);

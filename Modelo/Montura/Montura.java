@@ -1,10 +1,10 @@
-package Modelo.Monturas;
+package Modelo.Montura;
 
 public abstract class Montura {
     
-    private Double velocidad;
-    private Integer edad;
-    private String size;
+    protected Double velocidad;
+    protected Integer edad;
+    protected String size;
 
     public Double getVelocidad() {
         return velocidad;

@@ -2,19 +2,23 @@ package Modelo.Personajes;
 
 import Modelo.Armaduras.Armadura;
 import Modelo.Armas.Arma;
-import Modelo.Monturas.Montura;
+import Modelo.Montura.Montura;
 
 public abstract class Personaje implements Cloneable {
     
-    private String raza;
-    private Arma arma;
-    private Armadura armadura;
-    private Montura montura;
-    private String especialidad;
-    private String Sexo;
-    private Integer edad;
-    private Double altura;
+    protected String raza;
+    protected Arma arma;
+    protected Armadura armadura;
+    protected Montura montura;
+    protected String especialidad;
+    protected Integer edad;
+    protected Double altura;
     
+    public Personaje(Arma arma, Armadura armadura, Montura montura){
+        this.arma = arma;
+        this.armadura = armadura;
+        this.montura = montura;
+    }
 
     public String getRaza() {
         return raza;
@@ -30,14 +34,6 @@ public abstract class Personaje implements Cloneable {
 
     public void setEspecialidad(String especialidad) {
         this.especialidad = especialidad;
-    }
-
-    public String getSexo() {
-        return Sexo;
-    }
-
-    public void setSexo(String Sexo) {
-        this.Sexo = Sexo;
     }
 
     public Integer getEdad() {

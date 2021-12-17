@@ -2,16 +2,20 @@ package Modelo.Armaduras;
 
 public abstract class Armadura {
     
-    private Double resistencia;
-    private Double peso;
-    private String calidad;
-    private Double defensa;
+    protected String resistencia;
+    protected Double peso;
+    protected String calidad;
+    protected Double defensa;
 
-    public Double getResistencia() {
+    public Armadura (String calidad){
+        this.calidad = calidad;
+    }
+
+    public String getResistencia() {
         return resistencia;
     }
 
-    public void setResistencia(Double resistencia) {
+    public void setResistencia(String resistencia) {
         this.resistencia = resistencia;
     }
 

@@ -2,14 +2,16 @@ package modelo;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
+import modelo.personaje_builder.ElfoBuilder;
+import modelo.personaje_builder.EnanoBuilder;
+import modelo.personaje_builder.HobbitBuilder;
+import modelo.personaje_builder.HombreBuilder;
+import modelo.personaje_builder.OrcoBuilder;
+import modelo.personaje_builder.PersonajeBuilder;
 import modelo.personajes.Personaje;
-import modelo.personajes_factories.ElfoFactory;
-import modelo.personajes_factories.EnanoFactory;
-import modelo.personajes_factories.HobbitFactory;
-import modelo.personajes_factories.HombreFactory;
-import modelo.personajes_factories.OrcoFactory;
-import modelo.personajes_factories.PersonajeFactory;
+
 
 /**
  * Gestiona los personajes creados por el usuario
@@ -17,7 +19,7 @@ import modelo.personajes_factories.PersonajeFactory;
 public class PersonajesManager {
 
     private final List<Personaje> personajes;
-    private PersonajeFactory personajeFactory;
+    private PersonajeBuilder builder;
 
     public PersonajesManager() {
         personajes = new ArrayList();
@@ -27,30 +29,45 @@ public class PersonajesManager {
         return personajes;
     }
 
-    public void crearPersonajes(TipoPersonaje tipo, Integer cantidad) {
+    private Personaje crearPersonajes(TipoPersonaje tipo, Map<String, Boolean> caracteristicas) {
 
         switch (tipo) {
             case Hombre:
-                personajeFactory = new HombreFactory();
+                builder = new HombreBuilder();
                 break;
             case Enano:
-                personajeFactory = new EnanoFactory();
+                builder = new EnanoBuilder();
                 break;
             case Elfo:
-                personajeFactory = new ElfoFactory();
+                builder = new HobbitBuilder();
                 break;
             case Hobbit:
-                personajeFactory = new HobbitFactory();
+                builder = new ElfoBuilder();
                 break;
             case Orco:
-                personajeFactory = new OrcoFactory();
+                builder = new OrcoBuilder();
                 break;
-        }        
+        }
+        
+        if(caracteristicas.get("Arma")){
+            builder.buildArma();
+        }
+        if(caracteristicas.get("Armadura")){
+            builder.buildArmadura();
+        }
+        if(caracteristicas.get("Montura")){
+            builder.buildMontura();
+        }
 
+        return builder.buildPersonaje();
+    }
+
+    public void agregarPersonaje(TipoPersonaje tipo, Map<String, Boolean> caracteristicas, Integer cantidad){
+        
         for(int i = 0; i < cantidad; i++) {
-            //TODO cambiar al patron prototype
-            Personaje personajeCreado =  personajeFactory.crearPersonaje();
+            Personaje personajeCreado =  crearPersonajes(tipo, caracteristicas);
             personajes.add(personajeCreado);
         }
-    }    
+        
+    }
 }

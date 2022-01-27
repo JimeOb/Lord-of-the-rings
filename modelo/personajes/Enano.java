@@ -3,7 +3,6 @@ package modelo.personajes;
 import java.util.Random;
 
 
-
 public class Enano extends Personaje {
     
     public Enano (){

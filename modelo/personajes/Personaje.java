@@ -2,7 +2,7 @@ package modelo.personajes;
 
 import modelo.armaduras.Armadura;
 import modelo.armas.Arma;
-import modelo.equipamientos_factory.PersonajeEquipamientoFactory;
+
 import modelo.monturas.Montura;
 
 public abstract class Personaje implements Cloneable {
@@ -15,13 +15,30 @@ public abstract class Personaje implements Cloneable {
     protected Integer edad;
     protected Double altura;
     
-    protected PersonajeEquipamientoFactory equipamientoFactory;
 
-    public Personaje(PersonajeEquipamientoFactory equipamientoFactory) {
-        this.equipamientoFactory = equipamientoFactory;
-        armadura = equipamientoFactory.createArmadura();
-        arma = equipamientoFactory.createArma();
-        montura = equipamientoFactory.createMontura();
+
+    public Arma getArma() {
+        return arma;
+    }
+
+    public void setArma(Arma arma) {
+        this.arma = arma;
+    }
+
+    public Armadura getArmadura() {
+        return armadura;
+    }
+
+    public void setArmadura(Armadura armadura) {
+        this.armadura = armadura;
+    }
+
+    public Montura getMontura() {
+        return montura;
+    }
+
+    public void setMontura(Montura montura) {
+        this.montura = montura;
     }
 
     public String getRaza() {
@@ -55,33 +72,22 @@ public abstract class Personaje implements Cloneable {
     public void setAltura(Double altura) {
         this.altura = altura;
     }
-
-    public Arma getArma() {
-        return arma;
-    }
-
-    public Armadura getArmadura() {
-        return armadura;
-    }
-
-    public Montura getMontura() {
-        return montura;
-    } 
-    
     
     @Override
     public String toString() {        
-        return String.format("info del personaje: [Raza: %s, arma: " + arma.toString() +", armadura: "+ armadura.toString() +", montura: "+ montura.toString() +", especialidad: %s, edad: %d, altura: %f]", raza, especialidad, edad, altura);
+        return String.format("info del arma: [Raza: %s, arma: " + arma.toString() +", armadura: "+ armadura.toString() +", montura: "+ montura.toString() +", especialidad: %s, edad: %i, altura: %d]", raza, especialidad, edad, altura);
     }  
+
+
+
 
     @Override
     protected Personaje clone() {
         Personaje clonedPersonaje = null;
         try {
             clonedPersonaje = (Personaje) super.clone();
+        
             
-            
-            return clonedPersonaje;
         } catch (CloneNotSupportedException ex) {
             ex.printStackTrace();
         }   

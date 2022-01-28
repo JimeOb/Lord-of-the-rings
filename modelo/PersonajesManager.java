@@ -39,10 +39,10 @@ public class PersonajesManager {
                 builder = new EnanoBuilder();
                 break;
             case Elfo:
-                builder = new HobbitBuilder();
+                builder = new ElfoBuilder();
                 break;
             case Hobbit:
-                builder = new ElfoBuilder();
+                builder = new HobbitBuilder();
                 break;
             case Orco:
                 builder = new OrcoBuilder();

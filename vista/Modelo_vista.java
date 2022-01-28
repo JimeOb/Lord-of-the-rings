@@ -79,7 +79,8 @@ public class Modelo_vista {
             mapa.put("Arma",getVista().getRbtnArma().isSelected());
             
             Integer cantidadPersonajes = Integer.parseInt(getVista().getJtxNumero().getText());
-            String tipo = (String) getVista().getBoxGuerreros1().getSelectedItem();                        
+            String tipo = (String) getVista().getBoxGuerreros1().getSelectedItem();          
+            
             managerJuego.agregarPersonaje(Enum.valueOf(TipoPersonaje.class, tipo), mapa , cantidadPersonajes);
             getVista().getBoxGuerreros().setSelectedIndex(0);
             actualizarListaPersonajes();     

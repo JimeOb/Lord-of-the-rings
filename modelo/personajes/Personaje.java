@@ -78,7 +78,7 @@ public abstract class Personaje implements Cloneable {
     
     @Override
     public String toString() {        
-        return String.format("info del arma: [Raza: %s, arma: " + arma.toString() +", armadura: "+ armadura.toString() +", montura: "+ montura.toString() +", especialidad: %s, edad: %i, altura: %d]", raza, especialidad, edad, altura);
+        return String.format("info del arma: [Raza: %s, arma: " + arma.toString() +", armadura: "+ armadura.toString() +", montura: "+ montura.toString() +", especialidad: %s, edad: %d, altura: %f]", raza, especialidad, edad, altura);
     }  
 
 

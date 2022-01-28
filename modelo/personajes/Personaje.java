@@ -14,8 +14,7 @@ public abstract class Personaje implements Cloneable {
     protected String especialidad;
     protected Integer edad;
     protected Double altura;
-    
-
+    protected String rutaImagen;
 
     public Arma getArma() {
         return arma;
@@ -41,6 +40,10 @@ public abstract class Personaje implements Cloneable {
         this.montura = montura;
     }
 
+    public String getRutaImagen() {
+        return rutaImagen;
+    }
+    
     public String getRaza() {
         return raza;
     }

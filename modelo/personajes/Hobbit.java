@@ -11,5 +11,6 @@ public class Hobbit extends Personaje {
         this.edad = 60 + rm.nextInt(130);
         this.especialidad = "Desarrolladores";
         this.raza = "Hobbit";
+        this.rutaImagen = "C:\\Users\\paxpi\\Documents\\NetBeansProjects\\SeñorA\\src\\vistas\\hobbit.jpg";
     }
 }

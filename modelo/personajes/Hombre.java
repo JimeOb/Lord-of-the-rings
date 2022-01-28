@@ -11,5 +11,6 @@ public class Hombre extends Personaje {
         this.edad = 20 + rm.nextInt(50);
         this.especialidad = "Caballero";
         this.raza = "Humano";
+        this.rutaImagen = "C:\\Users\\paxpi\\Documents\\NetBeansProjects\\SeñorA\\src\\vistas\\hombre.jpg";
     }
 }

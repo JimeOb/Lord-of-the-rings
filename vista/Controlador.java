@@ -20,5 +20,8 @@ public class Controlador implements ActionListener {
         else if(e.getSource() == modelo.getVista().getBoxGuerreros()){
             modelo.actualizarDatosPanel();
         }
+        else if (e.getSource() == modelo.getVista().getBtnAgregar()){
+            modelo.cambiarCard("crear");
+        }
     }   
 }

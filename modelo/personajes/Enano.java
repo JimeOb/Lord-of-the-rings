@@ -11,5 +11,6 @@ public class Enano extends Personaje {
         this.edad = 100 + rm.nextInt(300);
         this.especialidad = "Guerrero y herrero";
         this.raza = "Enano";
+        this.rutaImagen = "C:\\Users\\paxpi\\Documents\\NetBeansProjects\\SeñorA\\src\\vistas\\enano.jpg";
     }
 }

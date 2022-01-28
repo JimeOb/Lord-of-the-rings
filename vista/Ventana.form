@@ -18,285 +18,617 @@
     <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
     <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
-    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,1,-62,0,0,4,43"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,3,55,0,0,6,-66"/>
   </AuxValues>
 
   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
     <Property name="useNullLayout" type="boolean" value="false"/>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="jLabel2">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tempus Sans ITC" size="24" style="2"/>
-        </Property>
-        <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="El se&#xf1;or de los anillos"/>
-        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-          <Color id="Cursor Por defecto"/>
-        </Property>
-      </Properties>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="10" y="11" width="274" height="62"/>
-        </Constraint>
-      </Constraints>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel3">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tempus Sans ITC" size="18" style="0"/>
-        </Property>
-        <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="tipo de guerreros : "/>
-      </Properties>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="10" y="230" width="-1" height="37"/>
-        </Constraint>
-      </Constraints>
-    </Component>
-    <Component class="javax.swing.JTextField" name="jtxNumero">
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="210" y="180" width="41" height="-1"/>
-        </Constraint>
-      </Constraints>
-    </Component>
-    <Component class="javax.swing.JButton" name="btnGenerar">
-      <Properties>
-        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="99" green="ff" red="99" type="rgb"/>
-        </Property>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tempus Sans ITC" size="24" style="1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="GENERAR"/>
-      </Properties>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="63" y="366" width="159" height="48"/>
-        </Constraint>
-      </Constraints>
-    </Component>
-    <Component class="javax.swing.JComboBox" name="boxElegir">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
-            <StringItem index="0" value="Item 1"/>
-            <StringItem index="1" value="Item 2"/>
-            <StringItem index="2" value="Item 3"/>
-            <StringItem index="3" value="Item 4"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="320" y="20" width="680" height="-1"/>
-        </Constraint>
-      </Constraints>
-    </Component>
-    <Container class="javax.swing.JPanel" name="pnlGuerreros">
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="300" y="60" width="750" height="370"/>
+          <AbsoluteConstraints x="910" y="40" width="800" height="770"/>
         </Constraint>
       </Constraints>
 
-      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
-        <Property name="useNullLayout" type="boolean" value="false"/>
-      </Layout>
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="lbRaza">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tempus Sans ITC" size="24" style="1"/>
-            </Property>
-            <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="Raza del personaje"/>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="220" y="10" width="500" height="40"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="javax.swing.JLabel" name="lbImagen">
+        <Container class="javax.swing.JPanel" name="jpnImagenes">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="99" green="99" red="0" type="rgb"/>
-            </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Vista/Img/elfo.jpg"/>
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="20" y="10" width="170" height="230"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabel6">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Edad : "/>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="250" y="90" width="-1" height="-1"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabel7">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Altura :"/>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="250" y="140" width="-1" height="-1"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabel8">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Especialidad :"/>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="250" y="190" width="-1" height="-1"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabel9">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Montura :"/>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="250" y="240" width="-1" height="-1"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabel10">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Armadura :"/>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="250" y="290" width="-1" height="-1"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="javax.swing.JTextField" name="jtxArma">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="jTextField1"/>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="330" y="330" width="420" height="30"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="javax.swing.JTextField" name="jtxEdad">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="jTextField1"/>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="330" y="80" width="230" height="30"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="javax.swing.JTextField" name="jtxAltura">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="jTextField1"/>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="330" y="130" width="230" height="30"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="javax.swing.JTextField" name="jtxEspecialidad">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="jTextField1"/>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="330" y="180" width="230" height="30"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="javax.swing.JTextField" name="jtxMontura">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="jTextField1"/>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="330" y="230" width="420" height="30"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="javax.swing.JTextField" name="jtxArnadura">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="jTextField1"/>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="330" y="280" width="420" height="30"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabel14">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Arma :"/>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="250" y="340" width="-1" height="-1"/>
-            </Constraint>
-          </Constraints>
-        </Component>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+            <Property name="columns" type="int" value="4"/>
+            <Property name="horizontalGap" type="int" value="10"/>
+            <Property name="rows" type="int" value="2"/>
+            <Property name="verticalGap" type="int" value="10"/>
+          </Layout>
+        </Container>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JLabel" name="jLabel4">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tempus Sans ITC" size="18" style="0"/>
-        </Property>
-        <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="Numero de guerreros : "/>
-      </Properties>
+    <Container class="javax.swing.JPanel" name="pnlInfo">
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="10" y="170" width="-1" height="37"/>
+          <AbsoluteConstraints x="50" y="30" width="830" height="770"/>
         </Constraint>
       </Constraints>
-    </Component>
-    <Component class="javax.swing.JComboBox" name="boxGuerreros1">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
-            <StringItem index="0" value="Item 1"/>
-            <StringItem index="1" value="Item 2"/>
-            <StringItem index="2" value="Item 3"/>
-            <StringItem index="3" value="Item 4"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="boxGuerreros1ActionPerformed"/>
-      </Events>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="150" y="240" width="110" height="-1"/>
-        </Constraint>
-      </Constraints>
-    </Component>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignCardLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="jPanel2">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+              <CardConstraints cardName="crear"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+            <Property name="useNullLayout" type="boolean" value="false"/>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel2">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tempus Sans ITC" size="24" style="2"/>
+                </Property>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+                <Property name="text" type="java.lang.String" value="El se&#xf1;or de los anillos"/>
+                <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                  <Color id="Cursor Por defecto"/>
+                </Property>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="70" y="40" width="274" height="62"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel3">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tempus Sans ITC" size="18" style="0"/>
+                </Property>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+                <Property name="text" type="java.lang.String" value="tipo de guerreros : "/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="80" y="180" width="-1" height="37"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jtxNumero">
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="280" y="130" width="41" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnGenerar">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="99" green="ff" red="99" type="rgb"/>
+                </Property>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tempus Sans ITC" size="24" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="GENERAR"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="120" y="390" width="159" height="48"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel4">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tempus Sans ITC" size="18" style="0"/>
+                </Property>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+                <Property name="text" type="java.lang.String" value="Numero de guerreros : "/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="80" y="120" width="-1" height="37"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="boxGuerreros1">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="4">
+                    <StringItem index="0" value="Item 1"/>
+                    <StringItem index="1" value="Item 2"/>
+                    <StringItem index="2" value="Item 3"/>
+                    <StringItem index="3" value="Item 4"/>
+                  </StringArray>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="boxGuerreros1ActionPerformed"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="220" y="190" width="110" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="rbtnArmadura">
+              <Properties>
+                <Property name="text" type="java.lang.String" value=" Armadura"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="120" y="260" width="-1" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="rbtnMontura">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Montura"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="120" y="300" width="-1" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="rbtnArma">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Arma"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="120" y="340" width="-1" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="pnlGuerreros">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+              <CardConstraints cardName="info"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+            <Property name="useNullLayout" type="boolean" value="false"/>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="lbImagen">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="99" green="99" red="0" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="ff"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="120" y="120" width="170" height="230"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lbRaza">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tempus Sans ITC" size="24" style="1"/>
+                </Property>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+                <Property name="text" type="java.lang.String" value="Raza del personaje : "/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="60" y="70" width="280" height="40"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel6">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Edad : "/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="420" y="190" width="-1" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jtxEdad">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jTextField1"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="500" y="180" width="230" height="30"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel7">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Altura :"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="420" y="250" width="-1" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jtxAltura">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jTextField1"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="500" y="240" width="230" height="30"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel8">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Especialidad :"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="420" y="310" width="-1" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jtxEspecialidad">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jTextField1"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="500" y="300" width="230" height="30"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jtxRaza">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jTextField1"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="320" y="70" width="280" height="40"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnAgregar">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Agregar "/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="640" y="720" width="120" height="30"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="boxElegir">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="4">
+                    <StringItem index="0" value="Item 1"/>
+                    <StringItem index="1" value="Item 2"/>
+                    <StringItem index="2" value="Item 3"/>
+                    <StringItem index="3" value="Item 4"/>
+                  </StringArray>
+                </Property>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="70" y="20" width="680" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+              <Properties>
+                <Property name="horizontalScrollBarPolicy" type="int" value="31"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="130" y="402" width="550" height="300"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Container class="javax.swing.JPanel" name="pnlCaracteristicas">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout">
+                    <Property name="axis" type="int" value="3"/>
+                  </Layout>
+                  <SubComponents>
+                    <Container class="javax.swing.JPanel" name="pnlMontura">
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+                        <Property name="useNullLayout" type="boolean" value="false"/>
+                      </Layout>
+                      <SubComponents>
+                        <Component class="javax.swing.JLabel" name="jLabel9">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Tahoma" size="18" style="1"/>
+                            </Property>
+                            <Property name="horizontalAlignment" type="int" value="0"/>
+                            <Property name="text" type="java.lang.String" value="Montura "/>
+                            <Property name="horizontalTextPosition" type="int" value="0"/>
+                          </Properties>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="0" y="0" width="550" height="50"/>
+                            </Constraint>
+                          </Constraints>
+                        </Component>
+                        <Component class="javax.swing.JTextField" name="txtEdadMont">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Sin Montura"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtEdadMontActionPerformed"/>
+                          </Events>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="100" y="60" width="420" height="30"/>
+                            </Constraint>
+                          </Constraints>
+                        </Component>
+                        <Component class="javax.swing.JLabel" name="jLabel1">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Edad:"/>
+                          </Properties>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="30" y="70" width="-1" height="-1"/>
+                            </Constraint>
+                          </Constraints>
+                        </Component>
+                        <Component class="javax.swing.JLabel" name="jLabel5">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Velocidad:"/>
+                          </Properties>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="30" y="110" width="-1" height="-1"/>
+                            </Constraint>
+                          </Constraints>
+                        </Component>
+                        <Component class="javax.swing.JTextField" name="txtVelocidadMont">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="jTextField1"/>
+                          </Properties>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="100" y="100" width="420" height="30"/>
+                            </Constraint>
+                          </Constraints>
+                        </Component>
+                        <Component class="javax.swing.JLabel" name="jLabel11">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Tama&#xf1;o:"/>
+                          </Properties>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="30" y="150" width="-1" height="-1"/>
+                            </Constraint>
+                          </Constraints>
+                        </Component>
+                        <Component class="javax.swing.JTextField" name="txtSizeMont">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="jTextField2"/>
+                          </Properties>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="100" y="140" width="420" height="30"/>
+                            </Constraint>
+                          </Constraints>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                    <Container class="javax.swing.JPanel" name="pnlArma">
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+                        <Property name="useNullLayout" type="boolean" value="false"/>
+                      </Layout>
+                      <SubComponents>
+                        <Component class="javax.swing.JLabel" name="jLabel14">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Tahoma" size="18" style="1"/>
+                            </Property>
+                            <Property name="horizontalAlignment" type="int" value="0"/>
+                            <Property name="text" type="java.lang.String" value="Arma"/>
+                          </Properties>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="0" y="0" width="620" height="40"/>
+                            </Constraint>
+                          </Constraints>
+                        </Component>
+                        <Component class="javax.swing.JTextField" name="txtAtaqueArma">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="jTextField1"/>
+                          </Properties>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="100" y="100" width="420" height="30"/>
+                            </Constraint>
+                          </Constraints>
+                        </Component>
+                        <Component class="javax.swing.JTextField" name="txtPesoArma">
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtPesoArmaActionPerformed"/>
+                          </Events>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="100" y="60" width="420" height="30"/>
+                            </Constraint>
+                          </Constraints>
+                        </Component>
+                        <Component class="javax.swing.JTextField" name="txtRarezaArma">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="jTextField2"/>
+                          </Properties>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="100" y="140" width="420" height="30"/>
+                            </Constraint>
+                          </Constraints>
+                        </Component>
+                        <Component class="javax.swing.JLabel" name="jLabel13">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Rareza:"/>
+                          </Properties>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="30" y="150" width="-1" height="-1"/>
+                            </Constraint>
+                          </Constraints>
+                        </Component>
+                        <Component class="javax.swing.JLabel" name="jLabel15">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Peso:"/>
+                          </Properties>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="30" y="70" width="-1" height="-1"/>
+                            </Constraint>
+                          </Constraints>
+                        </Component>
+                        <Component class="javax.swing.JLabel" name="jLabel16">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Ataque:"/>
+                          </Properties>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="30" y="110" width="-1" height="-1"/>
+                            </Constraint>
+                          </Constraints>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                    <Container class="javax.swing.JPanel" name="pnlArmadura">
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+                        <Property name="useNullLayout" type="boolean" value="false"/>
+                      </Layout>
+                      <SubComponents>
+                        <Component class="javax.swing.JTextField" name="txtPesoArm">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="jTextField1"/>
+                          </Properties>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="100" y="100" width="420" height="30"/>
+                            </Constraint>
+                          </Constraints>
+                        </Component>
+                        <Component class="javax.swing.JTextField" name="txtResistenciaArm">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Sin Montura"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtResistenciaArmActionPerformed"/>
+                          </Events>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="100" y="60" width="420" height="30"/>
+                            </Constraint>
+                          </Constraints>
+                        </Component>
+                        <Component class="javax.swing.JTextField" name="txtCalidadArm">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="jTextField2"/>
+                          </Properties>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="100" y="140" width="420" height="30"/>
+                            </Constraint>
+                          </Constraints>
+                        </Component>
+                        <Component class="javax.swing.JLabel" name="jLabel12">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Calidad:"/>
+                          </Properties>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="30" y="150" width="-1" height="-1"/>
+                            </Constraint>
+                          </Constraints>
+                        </Component>
+                        <Component class="javax.swing.JLabel" name="jLabel17">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Resistencia:"/>
+                          </Properties>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="30" y="70" width="-1" height="-1"/>
+                            </Constraint>
+                          </Constraints>
+                        </Component>
+                        <Component class="javax.swing.JLabel" name="jLabel18">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Peso:"/>
+                          </Properties>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="30" y="110" width="-1" height="-1"/>
+                            </Constraint>
+                          </Constraints>
+                        </Component>
+                        <Component class="javax.swing.JLabel" name="jLabel19">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Tahoma" size="18" style="1"/>
+                            </Property>
+                            <Property name="horizontalAlignment" type="int" value="0"/>
+                            <Property name="text" type="java.lang.String" value="Armadura"/>
+                          </Properties>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="0" y="14" width="550" height="20"/>
+                            </Constraint>
+                          </Constraints>
+                        </Component>
+                        <Component class="javax.swing.JLabel" name="jLabel20">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Defensa:"/>
+                          </Properties>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="30" y="190" width="-1" height="-1"/>
+                            </Constraint>
+                          </Constraints>
+                        </Component>
+                        <Component class="javax.swing.JTextField" name="txtDefensaArm">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="jTextField2"/>
+                          </Properties>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="100" y="180" width="420" height="30"/>
+                            </Constraint>
+                          </Constraints>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
   </SubComponents>
 </Form>
